@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>SendMail</OriginalElement>
+  <nodes>
+    <node x="117.0" y="127.0">SendMail.EmailSender</node>
+    <node x="0.0" y="0.0">SendMail.JavaMailUtil</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="SendMail.EmailSender" target="SendMail.JavaMailUtil" relationship="DEPENDENCY">
+      <point x="0.0" y="-27.5" />
+      <point x="0.0" y="38.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="75.5" y="52.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

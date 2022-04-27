@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Authentication</OriginalElement>
+  <nodes>
+    <node x="0.0" y="127.0">Authentication.LoginSystem</node>
+    <node x="427.00000000000006" y="193.0">Authentication.UserNameValidator</node>
+    <node x="564.0375000000001" y="0.0">Authentication.Validator</node>
+    <node x="305.0375000000001" y="400.0">Authentication.RegistrationSystem</node>
+    <node x="651.0" y="182.0">Authentication.PasswordValidator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Authentication.RegistrationSystem" target="Authentication.UserNameValidator" relationship="TO_ONE">
+      <point x="0.0" y="-115.5" />
+      <point x="540.0375000000001" y="378.0" />
+      <point x="478.00000000000006" y="378.0" />
+      <point x="-51.0" y="38.5" />
+    </edge>
+    <edge source="Authentication.PasswordValidator" target="Authentication.Validator" relationship="REALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="768.0" y="102.0" />
+      <point x="665.0375000000001" y="102.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="Authentication.RegistrationSystem" target="Authentication.PasswordValidator" relationship="TO_ONE">
+      <point x="134.28571428571422" y="-115.5" />
+      <point x="674.3232142857144" y="378.0" />
+      <point x="709.5" y="378.0" />
+      <point x="-58.5" y="49.5" />
+    </edge>
+    <edge source="Authentication.RegistrationSystem" target="Authentication.UserNameValidator" relationship="CREATE">
+      <point x="67.14285714285711" y="-115.5" />
+      <point x="607.1803571428572" y="378.0" />
+      <point x="580.0" y="378.0" />
+      <point x="51.0" y="38.5" />
+    </edge>
+    <edge source="Authentication.RegistrationSystem" target="Authentication.PasswordValidator" relationship="CREATE">
+      <point x="201.42857142857144" y="-115.5" />
+      <point x="741.4660714285715" y="378.0" />
+      <point x="826.5" y="378.0" />
+      <point x="58.5" y="49.5" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="Authentication.RegistrationSystem" relationship="TO_ONE">
+      <point x="135.66666666666663" y="104.5" />
+      <point x="339.16666666666663" y="358.0" />
+      <point x="472.89464285714286" y="358.0" />
+      <point x="-67.14285714285722" y="-115.5" />
+    </edge>
+    <edge source="Authentication.LoginSystem" target="Authentication.RegistrationSystem" relationship="DEPENDENCY">
+      <point x="-135.66666666666663" y="104.5" />
+      <point x="67.83333333333337" y="378.0" />
+      <point x="338.6089285714285" y="378.0" />
+      <point x="-201.42857142857156" y="-115.5" />
+    </edge>
+    <edge source="Authentication.RegistrationSystem" target="Authentication.LoginSystem" relationship="DEPENDENCY">
+      <point x="-134.2857142857144" y="-115.5" />
+      <point x="405.7517857142857" y="368.0" />
+      <point x="203.5" y="368.0" />
+      <point x="-2.8421709430404007E-14" y="104.5" />
+    </edge>
+    <edge source="Authentication.UserNameValidator" target="Authentication.Validator" relationship="REALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="529.0" y="102.0" />
+      <point x="665.0375000000001" y="102.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.9682291702640634" showDependencies="true" x="574.5981687093293" y="300.3410416608099" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

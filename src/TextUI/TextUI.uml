@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>TextUI</OriginalElement>
+  <nodes>
+    <node x="0.0" y="599.0">TextUI.ModifyTemplateSystem</node>
+    <node x="1677.5" y="621.0">TextUI.StartSystem</node>
+    <node x="440.12403846153836" y="55.0">TextUI.CalendarUpdatingSystem</node>
+    <node x="381.0" y="533.0">TextUI.CalendarCreator</node>
+    <node x="1090.5" y="0.0">TextUI.ActivityManagementSystem</node>
+    <node x="386.5" y="1022.0">TextUI.MainMenuSystem</node>
+    <node x="1048.4240384615382" y="357.0">TextUI.CalendarViewer</node>
+    <node x="1603.5" y="110.0">TextUI.QuitSystem</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="TextUI.CalendarViewer" target="TextUI.ActivityManagementSystem" relationship="CREATE">
+      <point x="94.40000000000009" y="-291.5" />
+      <point x="1378.8240384615383" y="337.0" />
+      <point x="1460.25" y="337.0" />
+      <point x="123.25" y="148.5" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="TextUI.QuitSystem" relationship="DEPENDENCY">
+      <point x="188.79999999999995" y="-291.5" />
+      <point x="1473.2240384615384" y="337.0" />
+      <point x="1667.0" y="337.0" />
+      <point x="-62.5" y="38.5" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="TextUI.ActivityManagementSystem" relationship="TO_ONE">
+      <point x="0.0" y="-291.5" />
+      <point x="1284.4240384615382" y="337.0" />
+      <point x="1213.75" y="337.0" />
+      <point x="-123.25" y="148.5" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.QuitSystem" relationship="DEPENDENCY">
+      <point x="253.77777777777783" y="-170.5" />
+      <point x="925.7777777777778" y="1001.0" />
+      <point x="1667.0" y="1001.0" />
+      <point x="-62.5" y="38.5" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.CalendarCreator" relationship="TO_ONE">
+      <point x="-63.44444444444457" y="-170.5" />
+      <point x="608.5555555555554" y="971.0" />
+      <point x="524.0" y="971.0" />
+      <point x="-143.0" y="115.5" />
+    </edge>
+    <edge source="TextUI.StartSystem" target="TextUI.QuitSystem" relationship="CREATE">
+      <point x="-37.5" y="-27.5" />
+      <point x="1715.0" y="337.0" />
+      <point x="1667.0" y="337.0" />
+      <point x="-62.5" y="38.5" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.CalendarCreator" relationship="CREATE">
+      <point x="0.0" y="-170.5" />
+      <point x="672.0" y="961.0" />
+      <point x="810.0" y="961.0" />
+      <point x="143.0" y="115.5" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.CalendarUpdatingSystem" relationship="CREATE">
+      <point x="-126.88888888888891" y="-170.5" />
+      <point x="545.1111111111111" y="981.0" />
+      <point x="370.5" y="981.0" />
+      <point x="370.5" y="327.0" />
+      <point x="550.8740384615384" y="327.0" />
+      <point x="-110.75" y="93.5" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="TextUI.CalendarUpdatingSystem" relationship="DEPENDENCY">
+      <point x="-188.79999999999995" y="-291.5" />
+      <point x="1095.6240384615385" y="337.0" />
+      <point x="370.5" y="337.0" />
+      <point x="370.5" y="327.0" />
+      <point x="550.8740384615384" y="327.0" />
+      <point x="-110.75" y="93.5" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.CalendarViewer" relationship="CREATE">
+      <point x="190.33333333333326" y="-170.5" />
+      <point x="862.3333333333333" y="991.0" />
+      <point x="1402.4240384615382" y="991.0" />
+      <point x="118.0" y="291.5" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.CalendarViewer" relationship="TO_ONE">
+      <point x="126.88888888888891" y="-170.5" />
+      <point x="798.8888888888889" y="981.0" />
+      <point x="1166.4240384615382" y="981.0" />
+      <point x="-118.0" y="291.5" />
+    </edge>
+    <edge source="TextUI.StartSystem" target="TextUI.QuitSystem" relationship="TO_ONE">
+      <point x="37.5" y="-27.5" />
+      <point x="62.5" y="38.5" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.CalendarUpdatingSystem" relationship="TO_ONE">
+      <point x="63.44444444444434" y="-170.5" />
+      <point x="735.4444444444443" y="971.0" />
+      <point x="963.5" y="971.0" />
+      <point x="963.5" y="317.0" />
+      <point x="772.3740384615384" y="317.0" />
+      <point x="110.75" y="93.5" />
+    </edge>
+    <edge source="TextUI.CalendarViewer" target="TextUI.CalendarUpdatingSystem" relationship="TO_ONE">
+      <point x="-94.39999999999998" y="-291.5" />
+      <point x="1190.0240384615383" y="327.0" />
+      <point x="963.5" y="327.0" />
+      <point x="963.5" y="317.0" />
+      <point x="772.3740384615384" y="317.0" />
+      <point x="110.75" y="93.5" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.ModifyTemplateSystem" relationship="CREATE">
+      <point x="-190.33333333333348" y="-170.5" />
+      <point x="481.6666666666665" y="991.0" />
+      <point x="270.0" y="991.0" />
+      <point x="90.0" y="49.5" />
+    </edge>
+    <edge source="TextUI.MainMenuSystem" target="TextUI.ModifyTemplateSystem" relationship="TO_ONE">
+      <point x="-253.77777777777783" y="-170.5" />
+      <point x="418.2222222222222" y="1001.0" />
+      <point x="90.0" y="1001.0" />
+      <point x="-90.0" y="49.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.4692697035430224" showDependencies="true" x="927.0" y="681.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

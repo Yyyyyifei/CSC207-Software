@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Activity</OriginalElement>
+  <nodes>
+    <node x="135.5" y="0.0">Activity.Activity</node>
+    <node x="0.0" y="259.0">Activity.ActivityManager</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Activity.ActivityManager" target="Activity.Activity" relationship="TO_MANY">
+      <point x="116.5" y="-71.5" />
+      <point x="349.5" y="234.0" />
+      <point x="281.75" y="234.0" />
+      <point x="48.75" y="104.5" />
+    </edge>
+    <edge source="Activity.ActivityManager" target="Activity.Activity" relationship="CREATE">
+      <point x="-116.5" y="-71.5" />
+      <point x="116.5" y="234.0" />
+      <point x="184.25" y="234.0" />
+      <point x="-48.75" y="104.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="90.5" y="52.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Calendar</OriginalElement>
+  <nodes>
+    <node x="10.5" y="523.0">Calendar.DateCalendar</node>
+    <node x="120.75" y="0.0">Calendar.Calendar</node>
+    <node x="124.41544117647072" y="759.0">Calendar.CalendarManager</node>
+    <node x="175.91544117647072" y="1306.0">Calendar.CalendarSystem</node>
+    <node x="316.1718137254902" y="501.0">Calendar.TimeTable</node>
+    <node x="101.0" y="652.0">Calendar.CalendarFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Calendar.CalendarManager" target="Calendar.CalendarFactory" relationship="CREATE">
+      <point x="-1.1368683772161603E-13" y="-247.5" />
+      <point x="403.9154411764706" y="738.0" />
+      <point x="448.5" y="738.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="Calendar.CalendarFactory" target="Calendar.DateCalendar" relationship="CREATE">
+      <point x="-231.66666666666663" y="-27.5" />
+      <point x="216.83333333333337" y="631.0" />
+      <point x="90.5" y="631.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="Calendar.CalendarManager" target="Calendar.TimeTable" relationship="DEPENDENCY">
+      <point x="111.79999999999984" y="-247.5" />
+      <point x="515.7154411764706" y="728.0" />
+      <point x="806.5" y="728.0" />
+      <point x="806.5" y="631.0" />
+      <point x="499.6718137254902" y="631.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="Calendar.CalendarSystem" target="Calendar.Calendar" relationship="DEPENDENCY">
+      <point x="155.33333333333337" y="-291.5" />
+      <point x="564.2487745098041" y="1280.0" />
+      <point x="864.4154411764706" y="1280.0" />
+      <point x="864.4154411764706" y="481.0" />
+      <point x="822.2303921568626" y="481.0" />
+      <point x="822.2303921568626" y="471.0" />
+      <point x="426.58333333333337" y="471.0" />
+      <point x="122.33333333333337" y="225.5" />
+    </edge>
+    <edge source="Calendar.CalendarFactory" target="Calendar.TimeTable" relationship="CREATE">
+      <point x="0.0" y="-27.5" />
+      <point x="448.5" y="631.0" />
+      <point x="499.6718137254902" y="631.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="Calendar.CalendarFactory" target="Calendar.Calendar" relationship="DEPENDENCY">
+      <point x="231.66666666666663" y="-27.5" />
+      <point x="680.1666666666666" y="621.0" />
+      <point x="693.6718137254902" y="621.0" />
+      <point x="693.6718137254902" y="481.0" />
+      <point x="822.2303921568626" y="481.0" />
+      <point x="822.2303921568626" y="471.0" />
+      <point x="426.58333333333337" y="471.0" />
+      <point x="122.33333333333337" y="225.5" />
+    </edge>
+    <edge source="Calendar.CalendarManager" target="Calendar.DateCalendar" relationship="DEPENDENCY">
+      <point x="-111.80000000000007" y="-247.5" />
+      <point x="292.11544117647065" y="728.0" />
+      <point x="90.5" y="728.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="Calendar.CalendarManager" target="Calendar.Calendar" relationship="TO_MANY">
+      <point x="-223.60000000000014" y="-247.5" />
+      <point x="180.31544117647059" y="738.0" />
+      <point x="0.0" y="738.0" />
+      <point x="0.0" y="471.0" />
+      <point x="181.91666666666663" y="471.0" />
+      <point x="-122.33333333333337" y="225.5" />
+    </edge>
+    <edge source="Calendar.CalendarSystem" target="Calendar.CalendarManager" relationship="CREATE">
+      <point x="-155.33333333333337" y="-291.5" />
+      <point x="253.58210784313735" y="1280.0" />
+      <point x="264.1654411764707" y="1280.0" />
+      <point x="-139.75" y="247.5" />
+    </edge>
+    <edge source="Calendar.CalendarSystem" target="Calendar.CalendarManager" relationship="TO_ONE">
+      <point x="0.0" y="-291.5" />
+      <point x="408.9154411764707" y="1280.0" />
+      <point x="543.6654411764707" y="1280.0" />
+      <point x="139.75" y="247.5" />
+    </edge>
+    <edge source="Calendar.CalendarManager" target="Calendar.Calendar" relationship="DEPENDENCY">
+      <point x="223.5999999999999" y="-247.5" />
+      <point x="627.5154411764706" y="738.0" />
+      <point x="864.4154411764706" y="738.0" />
+      <point x="864.4154411764706" y="481.0" />
+      <point x="822.2303921568626" y="481.0" />
+      <point x="822.2303921568626" y="471.0" />
+      <point x="426.58333333333337" y="471.0" />
+      <point x="122.33333333333337" y="225.5" />
+    </edge>
+    <edge source="Calendar.DateCalendar" target="Calendar.Calendar" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="90.5" y="481.0" />
+      <point x="297.32009803921557" y="481.0" />
+      <point x="297.32009803921557" y="471.0" />
+      <point x="304.25" y="471.0" />
+      <point x="0.0" y="225.5" />
+    </edge>
+    <edge source="Calendar.TimeTable" target="Calendar.Calendar" relationship="GENERALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="499.6718137254902" y="481.0" />
+      <point x="297.32009803921557" y="481.0" />
+      <point x="297.32009803921557" y="471.0" />
+      <point x="304.25" y="471.0" />
+      <point x="0.0" y="225.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5217391304347826" showDependencies="true" x="525.0" y="944.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
